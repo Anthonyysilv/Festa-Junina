@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Body*/
+body{
+    background-color: bisque;
+}
+/*Header*/
+header{
+    background-color: rgb(214, 214, 68);
+    overflow: auto;
+}
+header h1{
+    font-size: 90px;
+    padding-top: 20px;
+    text-align: center;
+}
+h2{
+    font-size: 45px;
+    padding-top: 20px;
+    text-align: center;
+}
+/****************************Nav*****************************/
+nav li{
+    float: left;
+    width: 70%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    margin-left: 15%;
+    list-style-type: none;
+}
+nav a{
+    display: block;
+    font-size: 30px;
+    border-radius: 25px;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(205, 122, 14);
+    background-color: azure;
+}
+a:hover{
+    background-color: burlywood;
+}
+/*Main*/
+main{
+    background-color: white;
+    width: 80%;
+    margin-left: 10%;
+}
+main h3{
+    font-size: 30px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+main h4{
+    font-size: 25px;
+    padding-bottom: 10px;
+    margin-left: 10%;
+    padding-top: 20px;
+}
+main p{
+    font-size: 20px;
+    text-indent: 5%;
+    line-height: -5px;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: justify;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+/*Section Sobre*/
+#sobre img{
+    width: 40%;
+    margin-right: 10%;
+    padding-left: 10px;
+    padding-top: 70px;
+    float: right;
+}
+/*Section Local*/
+#local img{
+    width: 50%;
+    padding-top: 10px;
+    margin-left: 25%;
+}
+/*Section Eventos*/
+#eventos{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#eventos img{
+    width: 100%;
+}
+#eventos ul{
+    display: inline-block;
+    list-style-type: none;
+}
+#eventos li{
+    width: 30%;
+    padding: 1%;
+    float: left;
+}
+#eventos h2{
+    font-size: 23px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*Section Organizadores*/
+#organizadores{
+    padding-top: 30px;
+}
+/*Footer Criadores*/
+footer{
+    padding: 50px;
+    text-align: center;
+}
+/***************************Breakpoints***************************/
+/************************************Smartphone************************************/
+@media (max-width: 576px) {
+    #sobre img{
+        width: 100%;
+        margin-right: 10%;
+        padding-left: 10px;
+        padding-top: 70px;
+        float: right;
+        margin: 0 auto;
+    }
+    #local img{
+        width: 100%;
+        padding-top: 10px;
+        margin-left: 25%;
+        margin: 0 auto;
+    }
+    #eventos img{
+        width: 100%;
+    }
+    #eventos li{
+    width: 50%;
+    padding: 1%;
+    float: left;
+    margin-right: 25%;
+    margin-left: 25%;
+}
+}/*Fim da resolução 576px*/
+/************************************Desktops************************************/
+@media (min-width: 992px) {
+    #sobre img{
+        width: 95%;
+        padding-left: 10px;
+        padding-top: 20px;
+        margin: 5% auto;
+        margin-right: 3%;
+    }
+    #local img{
+        width: 95%;
+        padding-left: 20px;
+        padding-top: 20px;
+        margin: 5% auto;
+        margin-right: 3%;
+    }
+    #eventos img{
+        width: 100%;
+    }
+    #eventos li{
+    width: 42%;
+    padding: 1%;
+    float: left;
+    margin: 1% 1%;
+    margin-right: 20px;
+    }
+}
